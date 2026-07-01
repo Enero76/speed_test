@@ -7,7 +7,7 @@ st.set_page_config(page_title="Speed Test", page_icon="🚀", layout="centered")
 st.title("Internet Speed Test")
 st.write("Run a quick download/upload test and view the results in real time.")
 
-if st.button("Run speed test", use_container_width=True):
+if st.button("Run speed test", width="stretch"):
     progress_bar = st.progress(0, text="Preparing speed test...")
     status_text = st.empty()
 
@@ -45,6 +45,6 @@ if st.button("Run speed test", use_container_width=True):
             gauge={"axis": {"range": [0, max_gauge]}}
         )
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 else:
     st.info("Press the button above to start the test.")
