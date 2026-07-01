@@ -2,7 +2,7 @@
 
 A simple Streamlit-based internet speed test app that measures download/upload speed and ping, then displays results with a Plotly gauge.
 
-This app is to be run locally. If run on a server it will measure the speed test of that server.
+This app is to be run locally. If run on a server it will measure the internet connection speed of that server.
 
 ## Features
 
